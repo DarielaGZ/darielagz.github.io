@@ -97,14 +97,14 @@ header {
   background-image: url(assets/informacion2.png);
   min-height: 600px;
   background-size: cover;
-  /* Elemento padre relative */
   position: relative;
-  padding-top: 100px;
-  /* transition: background-image 1s ease, padding 0.5s ease; */
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
 }
 
 #row-nosotros img {
-  width: 400px;
+  width: 300px;
+  border-radius: 50%;
 }
 
 .h1-fuente-fondo-oscuro {
@@ -127,11 +127,11 @@ header {
   font-family: "Amaranth", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color:#fff1e6;
 }
 .h1-fuente-fondo-claro {
   font-family: Pacifico;
   font-weight: 400;
-  /* este es el color de fondo del banner */
   color: #704214;
 }
 .p-fuente-fondo-claro {
@@ -140,4 +140,62 @@ header {
   font-style: normal;
   color: #230000;
   font-size: 17px;
+}
+
+#row-productos {
+  background-color: #704214;
+  max-height: 600px;
+}
+#row-productos btn {
+  background-color: #704214;
+  border-color: #704214;
+}
+
+.semicirculo {
+  width: 250px;                /* Ancho del semicírculo */
+  height: 300px;                /* Altura del semicírculo (la mitad del ancho) */
+  background-color: #fed6a9;   /* Color de fondo del semicírculo */
+  border-top-left-radius: 150px; /* Radio del borde para hacer la curva */
+  border-top-right-radius: 150px; /* Radio del borde para hacer la curva */
+  display: block;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;            /* Oculta cualquier contenido fuera del semicírculo */
+  margin: 0 auto;              /* Centra el semicírculo */
+  
+}
+
+.semicircle-item {
+  text-align: center;
+  padding: 20px;
+}
+
+.semicirculo img {
+  max-width: 100%;              /* Ajusta la imagen dentro del semicírculo */
+  max-height: 60%;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+@media screen and (min-width:576px) {
+  .carousel-inner
+  {
+    display: flex;
+  }
+  .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100%/3);
+  }
+  
+}
+.carousel-inner{
+  padding: 1em;
+}
+.card {
+  margin: 0 .5em;
 }
