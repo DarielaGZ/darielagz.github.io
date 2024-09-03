@@ -83,7 +83,7 @@ header {
   color: #fff1e6;
   min-height: 600px;
 }
-#icons-ordenar {
+.icons-ordenar {
   font-size: 400%;
   color: #fff1e6;
   padding: 10px 20px;
@@ -127,7 +127,7 @@ header {
   font-family: "Amaranth", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color:#fff1e6;
+  color: #fff1e6;
 }
 .h1-fuente-fondo-claro {
   font-family: Pacifico;
@@ -144,35 +144,16 @@ header {
 
 #row-productos {
   background-color: #704214;
-  max-height: 600px;
+  min-height: 600px;
 }
 #row-productos btn {
   background-color: #704214;
   border-color: #704214;
 }
-
-.semicirculo {
-  width: 250px;                /* Ancho del semicírculo */
-  height: 300px;                /* Altura del semicírculo (la mitad del ancho) */
-  background-color: #fed6a9;   /* Color de fondo del semicírculo */
-  border-top-left-radius: 150px; /* Radio del borde para hacer la curva */
-  border-top-right-radius: 150px; /* Radio del borde para hacer la curva */
-  display: block;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;            /* Oculta cualquier contenido fuera del semicírculo */
-  margin: 0 auto;              /* Centra el semicírculo */
-  
-}
-
-.semicircle-item {
-  text-align: center;
-  padding: 20px;
-}
-
-.semicirculo img {
-  max-width: 100%;              /* Ajusta la imagen dentro del semicírculo */
-  max-height: 60%;
+.card {
+  background-color: #fed6a9;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
 }
 
 .description {
@@ -180,22 +161,38 @@ header {
   font-size: 14px;
   color: #333;
 }
-
-@media screen and (min-width:576px) {
-  .carousel-inner
-  {
-    display: flex;
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
   }
-  .carousel-item {
+  .carousel-inner .carousel-item > div:first-child {
     display: block;
-    margin-right: 0;
-    flex: 0 0 calc(100%/3);
+  }
+}
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+  
+}
+
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
   }
   
 }
-.carousel-inner{
-  padding: 1em;
-}
-.card {
-  margin: 0 .5em;
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
 }
