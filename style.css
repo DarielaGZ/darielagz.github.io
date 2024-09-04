@@ -150,6 +150,16 @@ header {
   background-color: #704214;
   border-color: #704214;
 }
+
+#row-ubicacion {
+  background-image: url(assets/fondo-claro.png);
+  min-height: 600px;
+  background-size:cover;
+  position:relative;
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+}
+
 .card {
   background-image: url(assets/fondo-card.png);
   background-size: cover;
