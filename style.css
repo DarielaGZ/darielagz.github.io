@@ -94,7 +94,7 @@ header {
 }
 
 #row-nosotros {
-  background-image: url(assets/informacion2.png);
+  background-image: url(assets/fondo-claro2.png);
   min-height: 600px;
   background-size: cover;
   position: relative;
@@ -110,12 +110,13 @@ header {
 .h1-fuente-fondo-oscuro {
   font-family: Pacifico;
   font-weight: 400;
-  /* este es el color de fondo del banner */
   color: #fed6a9;
 }
 .h3-fuente-fondo-oscuro {
   font-family: "Amaranth", sans-serif;
   font-style: italic;
+  color: #fed6a9;
+  font-size: 130%;
 }
 .h4-fuente-fondo-oscuro {
   font-family: "Amaranth", sans-serif;
@@ -152,12 +153,13 @@ header {
 }
 
 #row-ubicacion {
-  background-image: url(assets/fondo-claro.png);
-  min-height: 600px;
+  background-image: url(assets/fondo-ubicacion.png);
   background-size:cover;
   position:relative;
-  padding-top: 100px !important;
-  padding-bottom: 100px !important;
+}
+
+#row-frase {
+  min-height: 600px;
 }
 
 .card {
@@ -179,6 +181,10 @@ header {
   .carousel-inner .carousel-item > div:first-child {
     display: block;
   }
+  #row-frase p {
+    font-size: 27px !important;
+  }
+  
 }
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
@@ -187,8 +193,6 @@ header {
   
 }
 
-
-/* medium and up screens */
 @media (min-width: 768px) {
 
   .carousel-inner .carousel-item-end.active,
@@ -206,4 +210,50 @@ header {
 .carousel-inner .carousel-item-end,
 .carousel-inner .carousel-item-start { 
   transform: translateX(0);
+}
+
+#row-frase img {
+  height: auto;
+  width: 300px;
+  margin-bottom: 0;
+  margin-top: 15vh;
+}
+#row-frase p {
+  font-family: Pacifico;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(255, 241, 230);
+  font-size: 50px;
+  margin-bottom: 30vh;
+}
+#row-ubicacion iframe {
+  max-height: 600px;
+}
+
+#media 
+{
+  background-color: #fed6a9;
+}
+
+#informacion {
+  background-color: #704214;
+}
+#informacion i {
+  color: #cd8054;
+}
+
+footer {
+  background-color: #704214;
+}
+
+#media i {
+  color: #704214;
+}
+#copyright {
+  background-color: #fed6a9;
+  background-image: url(assets/fondo-ubicacion.png);
+  color: #704214;
+  font-family: "Amaranth", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
