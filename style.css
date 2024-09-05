@@ -154,8 +154,8 @@ header {
 
 #row-ubicacion {
   background-image: url(assets/fondo-ubicacion.png);
-  background-size:cover;
-  position:relative;
+  background-size: cover;
+  position: relative;
 }
 
 #row-frase {
@@ -184,31 +184,27 @@ header {
   #row-frase p {
     font-size: 27px !important;
   }
-  
 }
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
   display: flex;
-  
 }
 
 @media (min-width: 768px) {
-
   .carousel-inner .carousel-item-end.active,
   .carousel-inner .carousel-item-next {
     transform: translateX(25%);
   }
 
-  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-start.active,
   .carousel-inner .carousel-item-prev {
     transform: translateX(-25%);
   }
-  
 }
 
 .carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start { 
+.carousel-inner .carousel-item-start {
   transform: translateX(0);
 }
 
@@ -230,8 +226,7 @@ header {
   max-height: 600px;
 }
 
-#media 
-{
+#media {
   background-color: #fed6a9;
 }
 
@@ -258,9 +253,58 @@ footer {
 }
 #copyright {
   background-color: #fed6a9;
-  background-image: url(assets/fondo-ubicacion.png);
+  background-image: url(assets/fondo-card.png);
   color: #704214;
   font-family: "Amaranth", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.nav-link {
+  color: #aa7444;
+  font-family: "Amaranth", sans-serif;
+  font-weight: 400;
+}
+
+.nav-link:hover {
+  color: #704214;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    background-color: transparent; /* Fondo del menú desplegable */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+.nav-item {
+  border-bottom: 1px solid hsla(30, 70%, 26%, 0.13); /* Línea divisora */
+}
+  .nav-link {
+    color: #aa7444;
+    font-family: "Amaranth", sans-serif;
+    font-weight: 400;
+  }
+
+  .nav-link:hover {
+    color: #704214;
+    font-weight: 700;
+  }
+  nav {
+    background-image: url(assets/header5.png);
+  }
+  #milista {
+    text-align: center;
+  }
+  .navbar-toggler {
+    border-width: 0px;
+    border-color: transparent;
+  }
+  .navbar-toggler:active,
+  .navbar-toggler:focus {
+    background-color: #fed6a9;
+  } /* Opcional: Cambiar el fondo del botón */
+}
+nav {
+  z-index: 100;
 }

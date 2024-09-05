@@ -20,12 +20,23 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-dark">
+      <nav class="navbar navbar-expand-lg">
         <div class="container">
           <img class="logo" src="assets/logo.png" alt="Sepia repostería logo" />
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#milista">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end shadow-sm  rounded" id="milista">
+            <ul class="navbar-nav">
+              <li class="nav-item "><a href="index.html" class="nav-link">Principal</a></li>
+              <li class="nav-item"><a href="#row-ordenar" class="nav-link">Servicio</a></li>
+              <li class="nav-item"><a href="#row-nosotros" class="nav-link">Nosotros</a></li>
+              <li class="nav-item"><a href="#row-productos" class="nav-link">Productos</a></li>
+              <li class="nav-item"><a href="#row-ubicacion" class="nav-link">Contacto</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
-      <!-- Div para imagen -->
       <div class="container">
         <div class="title fw-bolder">
           <h1 id="frase1">Repostería hecha</h1>
@@ -51,9 +62,7 @@
                 El mejor servicio
               </h1>
               <h3 class="h3-fuente-fondo-oscuro mt-3">
-                Zombie ipsum reversus ab viral inferno, nam rick grimes malum
-                cerebro. De carne lumbering animata corpora quaeritis. Summus
-                brains sit.
+                Ofrecemos un servicio excepcional en cada detalle. Desde la elaboración de cada postre hasta la entrega a tu puerta. <br> Nuestro objetivo es brindarte una experiencia inolvidable.
               </h3>
             </div>
           </div>
@@ -64,7 +73,7 @@
               </span>
               <h4 class="h4-fuente-fondo-oscuro mt-4">Entrega rápida</h4>
               <p class="p-fuente-fondo-oscuro">
-                Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+                Valoramos tu tiempo y garantizamos una entrega eficiente y rápida.
               </p>
             </div>
             <div class="col px-5">
@@ -73,7 +82,7 @@
               </span>
               <h4 class="h4-fuente-fondo-oscuro mt-4">Productos de calidad</h4>
               <p class="p-fuente-fondo-oscuro">
-                Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+                La calidad es nuestra prioridad, utilizamos solo los mejores ingredientes para nuestros postres.
               </p>
             </div>
             <div class="col px-5">
@@ -82,7 +91,7 @@
               </span>
               <h4 class="h4-fuente-fondo-oscuro mt-4">Productos frescos</h4>
               <p class="p-fuente-fondo-oscuro">
-                Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+                Todos nuestros productos se preparan frescos para garantizar el mejor sabor y calidad.
               </p>
             </div>
           </div>
@@ -225,11 +234,24 @@
                 ¡Encuéntranos!
               </h1>
               <p class="p-fuente-fondo-claro">
-                Nos encontramos en el corazón de Nueva Rosita, Coahuila, un lugar accesible y de fácil llegada para todos nuestros clientes. <br>Visítanos y descubre nuestros productos en persona, o simplemente pasa a saludar y conocer más sobre nosotros. ¡Te esperamos con los brazos abiertos!
+                Nos encontramos en el corazón de Nueva Rosita, Coahuila, un
+                lugar accesible y de fácil llegada para todos nuestros clientes.
+                <br />Visítanos y descubre nuestros productos en persona, o
+                simplemente pasa a saludar y conocer más sobre nosotros. ¡Te
+                esperamos con los brazos abiertos!
               </p>
             </div>
             <div class="col-md-6 m-0 p-0 h-100 d-flex">
-              <iframe class="ratio ratio-16x9" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28199.72765268861!2d-101.24372587868511!3d27.933688883087186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868adb08b324f19f%3A0x76cfa52d81bea797!2sNueva%20Rosita%2C%20Coah.!5e0!3m2!1ses-419!2smx!4v1725499207463!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe
+                class="ratio ratio-16x9"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28199.72765268861!2d-101.24372587868511!3d27.933688883087186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868adb08b324f19f%3A0x76cfa52d81bea797!2sNueva%20Rosita%2C%20Coah.!5e0!3m2!1ses-419!2smx!4v1725499207463!5m2!1ses-419!2smx"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
@@ -251,69 +273,95 @@
         </div>
       </div>
     </main>
-<footer class="text-center">
-  <section id="media" class="d-flex justify-content-center align-items-center p-4 ">
-    <div class="me-5">
-      <p class="p-fuente-fondo-claro mt-3">Síguenos en nuestras redes sociales:</p>
-    </div>
-    <div>
-      <a href="https://www.facebook.com/" class="me-4 text-reset text-decoration-none">
-        <i class="bi bi-facebook"></i>
-      </a>
-      <a href="https://x.com/" class="me-4 text-reset text-decoration-none">
-        <i class="bi bi-twitter"></i>
-      </a>
-      <a href="https://www.instagram.com/" class="me-4 text-reset text-decoration-none">
-        <i class="bi bi-instagram"></i>
-      </a>
-    </div>
-  </section>
-  <section id="informacion" class="">
-    <div class="container text-center text-md-start mt-5">
-      <div class="row mt-3">
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <h3 class="fw-bold mb-4 h3-fuente-fondo-oscuro">Sepia repostería
-          </h3>
-          <p class="p-fuente-fondo-oscuro">
-            Repostería hecha con amor y dedicación, ofreciendo productos frescos y de alta calidad.
+    <footer class="text-center">
+      <section
+        id="media"
+        class="d-flex justify-content-center align-items-center p-4"
+      >
+        <div class="me-5">
+          <p class="p-fuente-fondo-claro mt-3">
+            Síguenos en nuestras redes sociales:
           </p>
         </div>
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <h3 class="fw-bold mb-4 h3-fuente-fondo-oscuro">
-            Productos
-          </h3>
-          <p class="p-fuente-fondo-oscuro">
-            <a href="#!" class="text-reset">Brownies</a>
-          </p>
-          <p class="p-fuente-fondo-oscuro">
-            <a href="#!" class="text-reset">Galletas</a>
-          </p>
-          <p class="p-fuente-fondo-oscuro">
-            <a href="#!" class="text-reset">Galletas decoradas</a>
-          </p>
-          <p class="p-fuente-fondo-oscuro">
-            <a href="#!" class="text-reset">Pasteles</a>
-          </p>
-          <p class="p-fuente-fondo-oscuro">
-            <a href="#!" class="text-reset">Cupcakes</a>
-          </p>
-        </div>
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <h3 class="h3-fuente-fondo-oscuro fw-bold mb-4">Atención a clientes</h3>
-          <p class="p-fuente-fondo-oscuro"><i class="bi bi-house-door-fill"></i> Nueva Rosita, Coahuila, 26860</p>
-          <a class="a-fuente-fondo-oscuro d-block" href="mailto:sepiareposteria@gmail.com">
-            <i class="bi bi-envelope-heart-fill"></i> sepiareposteria@gmail.com
+        <div>
+          <a
+            href="https://www.facebook.com/"
+            class="me-4 text-reset text-decoration-none"
+          >
+            <i class="bi bi-facebook"></i>
           </a>
-          <a href="tel:+528641038857" class="a-fuente-fondo-oscuro mt-3 d-block"><i class="bi bi-telephone-fill"></i> + 52 864 103 88 57</a>
+          <a href="https://x.com/" class="me-4 text-reset text-decoration-none">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/"
+            class="me-4 text-reset text-decoration-none"
+          >
+            <i class="bi bi-instagram"></i>
+          </a>
         </div>
+      </section>
+      <section id="informacion" class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h3 class="fw-bold mb-4 h3-fuente-fondo-oscuro">
+                Sepia repostería
+              </h3>
+              <p class="p-fuente-fondo-oscuro">
+                Repostería hecha con amor y dedicación, ofreciendo productos
+                frescos y de alta calidad.
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h3 class="fw-bold mb-4 h3-fuente-fondo-oscuro">Productos</h3>
+              <p class="p-fuente-fondo-oscuro">
+                <a href="#!" class="text-reset">Brownies</a>
+              </p>
+              <p class="p-fuente-fondo-oscuro">
+                <a href="#!" class="text-reset">Galletas</a>
+              </p>
+              <p class="p-fuente-fondo-oscuro">
+                <a href="#!" class="text-reset">Galletas decoradas</a>
+              </p>
+              <p class="p-fuente-fondo-oscuro">
+                <a href="#!" class="text-reset">Pasteles</a>
+              </p>
+              <p class="p-fuente-fondo-oscuro">
+                <a href="#!" class="text-reset">Cupcakes</a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h3 class="h3-fuente-fondo-oscuro fw-bold mb-4">
+                Atención a clientes
+              </h3>
+              <p class="p-fuente-fondo-oscuro">
+                <i class="bi bi-house-door-fill"></i> Nueva Rosita, Coahuila,
+                26860
+              </p>
+              <a
+                class="a-fuente-fondo-oscuro d-block"
+                href="mailto:sepiareposteria@gmail.com"
+              >
+                <i class="bi bi-envelope-heart-fill"></i>
+                sepiareposteria@gmail.com
+              </a>
+              <a
+                href="tel:+528641038857"
+                class="a-fuente-fondo-oscuro mt-3 d-block"
+                ><i class="bi bi-telephone-fill"></i> + 52 864 103 88 57</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="copyright" class="text-center p-4">
+        © 2024 Copyright:
+        <a class="text-reset fw-bold" href="https://darielagz.github.io//"
+          >darielagz.github.io</a
+        >
       </div>
-    </div>
-  </section>
-  <div id="copyright" class="text-center p-4">
-    © 2024 Copyright:
-    <a class="text-reset fw-bold" href="https://darielagz.github.io//">darielagz.github.io</a>
-  </div>
-</footer>
+    </footer>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
