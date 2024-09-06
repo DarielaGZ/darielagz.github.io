@@ -63,6 +63,13 @@ header {
   padding-left: 20px;
   padding-right: 20px;
 }
+.btn:hover, .btn:active, .btn:focus {
+  background-color: #aa7444 !important;
+  color: #fff1e6 !important;
+  font-weight: bold;
+  border-color: transparent !important;
+  outline: none !important;
+}
 .title {
   color: #cd8054;
   /* elemento hijo */
@@ -138,11 +145,18 @@ header {
   color: #fed6a9;
   font-size: 130%;
 }
+
 .h4-fuente-fondo-oscuro {
   font-family: "Amaranth", sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #fed6a9;
+}
+.h4-fuente-fondo-claro {
+  font-family: "Amaranth", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #704214;
 }
 .p-fuente-fondo-oscuro {
   font-family: "Amaranth", sans-serif;
@@ -355,9 +369,7 @@ nav {
   border: 0px;
   max-width: 300px;
 }
-.card img {
-  background-color: aqua;
-}
+
 
 #seccion-contacto {
   background-color: #fff1e6;
@@ -366,3 +378,7 @@ nav {
 .icon-custom-color {
   color: #704214;
 }
+input:focus, textarea:focus {
+  border-color: rgb(170, 116, 68) !important;
+  box-shadow: 0 0 5px rgba(170, 116, 68, 0.5) !important; 
+  outline:#704214 !important; }
